@@ -23,9 +23,17 @@ public class Main {
 		c5.setContaCliente(co5);
 		c1.setContaCliente(co6);
 		
+		co1.depositar(200);
+		co1.transferir(co2, 100);
+		
 		c1.imprimirInfoCliente();
 		co1.imprimirExtrato();
+		
+		c2.imprimirInfoCliente();
 		co2.imprimirExtrato();
+		
+		Cliente.imprimirListaClientes();
+		
 	}
 
 }
